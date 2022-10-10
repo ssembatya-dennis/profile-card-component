@@ -1,3 +1,115 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/*Card layout*/
+
+main {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #41cbd3;
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-position: left 145% top 96%, right -100% bottom 178%;
+}
+
+.card {
+  min-width: 35rem;
+  min-height: 37.4rem;
+  background: #ffffff;
+  box-shadow: 0 5rem 10rem -2rem rgba(8, 70, 94, 0.504835);
+  border-radius: 1.5rem;
+}
+
+.card_design {
+  width: 100%;
+  height: calc(37.4rem * 0.3);
+  background-image: url(./images/bg-pattern-card.svg);
+  position: relative;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -50%;
+  transform: translate(-50%, 0);
+}
+
+.card_details {
+  padding: 7.2rem 5rem 2.4rem;
+}
+
+.card_stats {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats--main,
+.stats--sub {
+  display: block;
+}
+
+/*Card Typography*/
+
+.user-name--main {
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #2e3349;
+  margin-bottom: 8px;
+}
+
+.user-num {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #6b7082;
+  padding-left: 8.5px;
+}
+
+.user-name--sub {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #6b7082;
+  margin-bottom: 5.3rem;
+}
+
+.stats--main {
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #2e3349;
+}
+
+.stats--sub {
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #6b7082;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
